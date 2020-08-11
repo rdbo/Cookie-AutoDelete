@@ -325,7 +325,7 @@ describe('CleanupService', () => {
         settings: {
           ...firefoxState.settings,
           debugMode: {
-            name: 'debugMode',
+            name: `${SettingID.DEBUG_MODE}`,
             value: true,
           },
         },
@@ -504,7 +504,7 @@ describe('CleanupService', () => {
             settings: {
               ...firefoxState.settings,
               cacheCleanup: {
-                name: 'cacheCleanup',
+                name: `${SettingID.CLEANUP_CACHE}`,
                 value: true,
               },
             },
@@ -539,7 +539,7 @@ describe('CleanupService', () => {
           settings: {
             ...firefoxState.settings,
             contextualIdentities: {
-              name: 'contextualIdentities',
+              name: `${SettingID.CONTEXTUAL_IDENTITIES}`,
               value: true,
             },
           },
@@ -557,7 +557,7 @@ describe('CleanupService', () => {
             settings: {
               ...firefoxState.settings,
               cacheCleanup: {
-                name: 'cacheCleanup',
+                name: `${SettingID.CLEANUP_CACHE}`,
                 value: true,
               },
             },
@@ -580,7 +580,7 @@ describe('CleanupService', () => {
             settings: {
               ...firefoxState.settings,
               indexedDBCleanup: {
-                name: 'indexedDBCleanup',
+                name: `${SettingID.CLEANUP_INDEXEDDB}`,
                 value: true,
               },
             },
@@ -603,7 +603,7 @@ describe('CleanupService', () => {
             settings: {
               ...firefoxState.settings,
               localStorageCleanup: {
-                name: 'localStorageCleanup',
+                name: `${SettingID.CLEANUP_LOCALSTORAGE}`,
                 value: true,
               },
             },
@@ -621,7 +621,7 @@ describe('CleanupService', () => {
             settings: {
               ...firefoxState.settings,
               pluginDataCleanup: {
-                name: 'pluginDataCleanup',
+                name: `${SettingID.CLEANUP_PLUGIN_DATA}`,
                 value: true,
               },
             },
@@ -643,7 +643,7 @@ describe('CleanupService', () => {
             settings: {
               ...firefoxState.settings,
               serviceWorkersCleanup: {
-                name: 'serviceWorkersCleanup',
+                name: `${SettingID.CLEANUP_SERVICE_WORKERS}`,
                 value: true,
               },
             },
@@ -1058,7 +1058,7 @@ describe('CleanupService', () => {
       settings: {
         ...sampleState.settings,
         cleanExpiredCookies: {
-          name: 'cleanExpiredCookies',
+          name: `${SettingID.CLEAN_EXPIRED}`,
           value: true,
         },
       },
@@ -1399,7 +1399,7 @@ describe('CleanupService', () => {
       settings: {
         ...initialState.settings,
         cacheCleanup: {
-          name: 'cacheCleanup',
+          name: `${SettingID.CLEANUP_CACHE}`,
           value: true,
         },
       },
@@ -1409,7 +1409,7 @@ describe('CleanupService', () => {
       settings: {
         ...initialState.settings,
         indexedDBCleanup: {
-          name: 'indexedDBCleanup',
+          name: `${SettingID.CLEANUP_INDEXEDDB}`,
           value: true,
         },
       },
@@ -1419,7 +1419,7 @@ describe('CleanupService', () => {
       settings: {
         ...initialState.settings,
         localStorageCleanup: {
-          name: 'localStorageCleanup',
+          name: `${SettingID.CLEANUP_LOCALSTORAGE}`,
           value: true,
         },
       },
@@ -1429,7 +1429,7 @@ describe('CleanupService', () => {
       settings: {
         ...initialState.settings,
         pluginDataCleanup: {
-          name: 'pluginDataCleanup',
+          name: `${SettingID.CLEANUP_PLUGIN_DATA}`,
           value: true,
         },
       },
@@ -1439,7 +1439,7 @@ describe('CleanupService', () => {
       settings: {
         ...initialState.settings,
         serviceWorkersCleanup: {
-          name: 'serviceWorkersCleanup',
+          name: `${SettingID.CLEANUP_SERVICE_WORKERS}`,
           value: true,
         },
       },
